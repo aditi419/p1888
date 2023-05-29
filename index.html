@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Make Your Own Project - 1</title>
+
+        <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+        <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+        <script src="JS\text.js"></script>
+    </head>
+
+    <body>
+        <a-scene id="scene">
+           <!--A-FRAME Environment-->
+           <a-entity id="environment" environment="preset: poison; skyType: gradient; lighting: point;"></a-entity>
+       
+           <a-camera id="camera" position="0 1 0">
+                <!--Welcome Text-->
+                <a-entity id="text-entity" text="value: Welcome Player!" position="0 1.5 1" font-size="20" text></a-entity>
+           </a-camera>
+            
+        </a-scene>
+    </body>
+</html>
